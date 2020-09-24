@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flowers Html</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+body {background-color:#BDD09F;}
+</style>
+
+
+    <script language="javascript" type="text/javascript">
+        function printDiv(divID) {
+            //Get the HTML of div
+            var divElements = document.getElementById(divID).innerHTML;
+            //Get the HTML of whole page
+            var oldPage = document.body.innerHTML;
+
+            //Reset the page's HTML with div's HTML only
+            document.body.innerHTML = 
+              "<html><head><title></title></head><body>" + 
+              divElements + "</body>";
+
+            //Print Page
+            window.print();
+
+            //Restore orignal HTML
+            document.body.innerHTML = oldPage;
+
+          
+        }
+    </script>
+
+<body>
+<br><br>
+<div class="container-fluid">
+<br><br>
+  <div class="row">
+	<div class="col-sm-1"></div>
+
+     <form id="form1" runat="server">
+    <div class="col-sm-3" id="printablediv">
+
+    <input type="button" value="Print 1st Div" onclick="javascript:printDiv('printablediv')" />
+    <h2> Rose</h2>
+    <h5>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. </h5><img src="rose.png" alt="rose">
+
+    </div>
+  </form>
+
+    <div class="col-sm-5"><h2> BlueBell</h2><h6>A BlueBellis a bulbous perennial plant, found in Atlantic areas from north-western Spain to the British Isles, and also frequently used as a garden plant. </h6><img src="bluebell.png" alt="bluebell"></div>
+    <div class="col-sm-2" ><h2>Peony</h2><h6>The peony or paeony is a flowering plant in the genus Paeonia, the only genus in the family Paeoniaceae.</h6><img src="peony.jpg" alt="peony"></div>
+  </div>
+  <br>
+  <br>
+   <br>
+    <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-5"><h2> Lily</h2><h6>is a genus of herbaceous flowering plants growing from bulbs, all with large prominent flowers.</h6><img src="lilies.png" alt="lilies"></div>
+    <div class="col-sm-4"><h2> Daisy</h2><h5>A Daisy is a small grassland plant that has flowers with a yellow disk and white rays. It has given rise to mant ornamental garden varities. </h5><img src="daisy.png" alt="daisy"></div>
+	 <div class="col-sm-2"></div>
+  </div>
+  <br>
+  <br>
+   <br>
+  <div class="row">
+	<div class="col-sm-1"></div>
+    <div class="col-sm-3"><h2> <center>Sunflower</h2><h6><center>Sunflower is a large annual forb of the genus Helianthus grown as a crop for its edible oil and edible fruits</h6><img src="sunflower.png" alt="sunflower"></div>
+    <div class="col-sm-7"><h2>Hyacinth</h2><h5>Hyacinthus is a small genus of bulbous, spring-blooming perennial, fragrant flowering plants in the family Asparagaceae, subfamily Scilloideae.</h5>
+	<img src="hyacint.png" alt="hyacinth" align="middle"></div>
+  </div>
+  <br>
+  <br>
+   <br>
+    <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2.5"><h2> Cherry Blossom</h2><h6>A Cherry blossom is a flower of </h6>
+	<h6>many trees of genus Prunus. The </h6>
+	<h6>most well-known species is the</h6>
+	<h6> Japanese cherry, Prunus serrulata, </h6>
+	<h6> which is commonly called sakura. </h6><img src="cherryblossom.png" alt="cherryblossom"></div>
+    <div class="col-sm-5"><h2><center> Tulips</h2><h6>Tulips form a genus of spring-blooming perennial herbaceous bulbiferous geophytes. The flowers are usually large, showy and brightly colored, generally red, pink, yellow, or white. </h6><img src="tulips.png" alt="tulips"></div>
+    <div class="col-sm-2.5" ><h2>Iris</h2><h6>Iris is a genus of 260–300 </h6>
+<h6>species of flowering plants with </h6> <h6>showy flowers. It takes its </h6><h6>name from the Greek word for a </h6> <h6>rainbow, which is also the name </h6><h6>for the Greek goddess of the </h6><h6>rainbow, Iris. </h6><img src="iris.png" alt="iris"></div>
+  </div>
+  <br><br>
+  <br><br>
+</div>
+
+</body>
+</html>
